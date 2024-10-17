@@ -1,0 +1,33 @@
+1 - self.__turn is a private attribute. This variable stores the token (X or O) of the current turn. Given that it is private, it cannot be edited outside of the class. 
+  In what method should self.__turn be updated to reflect the upcoming turn?
+ place_token
+
+
+
+2 - The tic-tac-toe game board is made up of 9 total cells (3x3 grid). There are different strategies for what info a user should provide to have them select an open cell. 
+  Describe how you plan to approach this task.
+ Make 3x3 array of something like 
+ [[],[],[]]
+ [[],[],[]]
+ [[],[],[]]
+and with a similar moving function from the old final project, I can make it so you can choose which space you want to update.
+
+
+
+3 - __check_win() is a private method - it cannot be accessed outside of the class. Where in the class should __check_win() be called? What argument(s) should it accept?
+I believe it should be called in is_winner, due to is_winner being able to be called outside the class. Is_winner also returns if x or o won, which needs to actually see 
+if it won through check win
+
+
+
+4 - The TicTacToe class holds the very basic tools needed to make a functional game. However, there are other resources that need added in your main.py. 
+  Come up with at least 2 other functions (aside from main) that you will need to implement in main.py to make the game truly functional. 
+  Describe the purpose of these functions and any arguments they take.
+Rules, they describe the rules to the players and doesnt take any arguements except self
+__computer_turn, the next computer turn, will always be O and the players with always be X
+
+
+
+5 - The biggest challenge of programming games like this one is checking all possible win conditions. 
+  Summarize/describe your plan of attack - what algorithm do you plan to use to check the possible win conditions?
+Im probably going to spam if statements yandere dev code style.
